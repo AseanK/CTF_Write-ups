@@ -22,7 +22,7 @@ Ord(flag[p] << 8) + ord(flag[i])
 ### Using ASCII :
 p = 01110000 & i = 01101001
 
-( http://sticksandstones.kstrom.com/appen.html )
+http://sticksandstones.kstrom.com/appen.html
 (01110000 << 8) + (01101001)
 = 112                    = 105
 
@@ -31,7 +31,8 @@ p = 01110000 & i = 01101001
 
 Tried to find from ASCII but ASCII is 8-bit code ( `<< 8` makes it 16-bit )
 UTF-16 is a 16-bit code
-Looked up 28777 unicode character ( https://www.compart.com/en/unicode/U+7069 )
+Looked up 28777 unicode character
+https://www.compart.com/en/unicode/U+7069
 **MATCH** `灩`
 
 **It uses utf-16**
@@ -46,12 +47,14 @@ print(ans)
 ```
 
 Everything seems good getting duplicated output for `chr(flag[i].encode('utf-16')[-1])`.
-After digging for some time; Came across ( https://bugs.python.org/issue25325 )
+After digging for some time; Came across
+https://bugs.python.org/issue25325
 There are "three sub-flavors" for UTFs :
 - BE : Big-Endian byte serialization (most significant byte first)
 - LE : Little-Endian byte serialization (less significant byte first)
 - unmarked (Big-Endian by default, but may include a order mark to indicate the actual byte serialization used)
-Reference : ( https://www.unicode.org/glossary/ )
+
+Reference : https://www.unicode.org/glossary
 
 Tried :
 
