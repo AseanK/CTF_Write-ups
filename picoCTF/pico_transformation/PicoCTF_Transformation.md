@@ -12,8 +12,9 @@ I wonder what this really is... `enc`
 - chr ==> char to bits 
 
 ### Prettified code
-For I in range( 0, len(flag), 2)
+```For I in range( 0, len(flag), 2)
 Ord(flag[i] << 8) + ord(flag[I + 1])
+```
 
 First two `i`s are "p" and "i" knowing flag format = picoCTF{}
 Ord(flag[p] << 8) + ord(flag[i])
@@ -25,7 +26,7 @@ p = 01110000 & i = 01101001
 (01110000 << 8) + (01101001)
 = 112                    = 105
 
-### Shifting 8 bits to left = 0111.0000.0000.0000 ( 16-bits)
+- Shifting 8 bits to left = 0111.0000.0000.0000 ( 16-bits)
 28672 + 105  = 28777
 
 Tried to find from ASCII but ASCII is 8-bit code ( `<< 8` makes it 16-bit )
@@ -41,7 +42,8 @@ ans = ""
 for i in range(0, len(flag)):
     word = chr((ord(flag[i]) >> 8)) + chr(flag[i].encode('utf-16')[-1])
     ans += word
-print(ans)```
+print(ans)
+```
 
 Everything seems good getting duplicated output for `chr(flag[i].encode('utf-16')[-1])`.
 After digging for some time; Came across ( https://bugs.python.org/issue25325 )
@@ -58,7 +60,8 @@ ans = ""
 for i in range(0, len(flag)):
     word = chr((ord(flag[i]) >> 8)) + chr(flag[i].encode('utf-16be')[-1])
     ans += word
-print(ans)```
+print(ans)
+```
 
 flag found : `picoCTF{16_bits_inst34d_of_8_26684c20}`
 
