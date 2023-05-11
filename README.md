@@ -11,6 +11,6 @@ I'll be solving CTF questions daily basis.
 
 ## [get aHEAD](/picoCTF/pico_get_aHEAD)
 
-## [Static ain't always noise](../picoCTF/pico_Static_ain't_always_noise)
+## [Static ain't always noise](/picoCTF/pico_Static_ain't_always_noise)
 
-<!-- ## [](../picoCTF/) -->
+<!-- ## [](/picoCTF/) -->
