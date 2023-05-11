@@ -2,7 +2,7 @@
 I wonder what this really is... `enc` 
 ".join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
 
-`% cat enc` ==> 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弲㘶㠴挲ぽ
+`% cat enc` ==> 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弲㘶㠴挲ぽ <br>
 **tags: picoCTF 2021, Reserse Engineering**
 
 ## Notes
@@ -29,7 +29,7 @@ Reference: http://sticksandstones.kstrom.com/appen.html
 - Shifting 8 bits to left = 0111.0000.0000.0000 ( 16-bits)
 28672 + 105  = 28777
 
-Tried to find from ASCII but ASCII is 8-bit code ( `<< 8` makes it 16-bit )
+Tried to find from ASCII but ASCII is 8-bit code ( `<< 8` makes it 16-bit ) <br>
 UTF-16 is a 16-bit code
 Looked up 28777 unicode character
 
