@@ -3,11 +3,11 @@
 Personal write-ups for CTFs. <br>
 I'll be solving CTF questions daily basis.
 
-## [Transformation](../CTF/CTF/picoCTF/pico_Transformation)
+## [Transformation](CTF/picoCTF/pico_Transformation)
 
-## [Stonk](../CTF/picoCTF/pico_stonk)
+## [Stonk](../picoCTF/pico_stonk)
 
-## [Mind your Ps and Qs](../CTF/picoCTF/pico_Mind_your_Ps_and_Qs)
+## [Mind your Ps and Qs](/picoCTF/pico_Mind_your_Ps_and_Qs)
 
 ## [get aHEAD](../CTF/picoCTF/pico_get_aHEAD)
 
