@@ -3,10 +3,10 @@ I wonder what this really is... `enc`
 ".join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
 
 `% cat enc` ==> 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弲㘶㠴挲ぽ
-### tags: picoCTF 2021, Reserse Engineering
+**tags: picoCTF 2021, Reserse Engineering**
 
 ## Notes
-- `.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])` python script
+- `.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])`
 - << 8 => shift left by 8 bits
 - ord ==> bits to character
 - chr ==> char to bits 
@@ -69,7 +69,7 @@ for i in range(0, len(flag)):
 print(ans)
 ```
 
-flag found : `picoCTF{16_bits_inst34d_of_8_26684c20}`
+**Flag found : `picoCTF{16_bits_inst34d_of_8_26684c20}`**
 
 Also tried `utf-16le` to see if I get different result.
 returns duplicated `ans` like the first one (Seems like `unmarked` used LE)
