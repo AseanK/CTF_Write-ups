@@ -3,7 +3,7 @@
 Personal write-ups for CTFs. <br>
 I'll be solving CTF questions daily basis.
 
-## [Transformation](/CTF/picoCTF/pico_Transformation)
+## [Transformation](../CTF/CTF/picoCTF/pico_Transformation)
 
 ## [Stonk](../CTF/picoCTF/pico_stonk)
 
