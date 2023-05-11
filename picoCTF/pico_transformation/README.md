@@ -5,19 +5,25 @@ I wonder what this really is... `enc`
 `% cat enc` ==> 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弲㘶㠴挲ぽ <br>
 **tags: picoCTF 2021, Reserse Engineering**
 
+
+
 ## Notes
 - `.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])`
 - << 8 => shift left by 8 bits
 - ord ==> bits to character
 - chr ==> char to bits 
 
+
+
 ### Prettified code
 ```For I in range( 0, len(flag), 2)
 Ord(flag[i] << 8) + ord(flag[I + 1])
 ```
 
-First two `i`s are "p" and "i" knowing flag format = picoCTF{}
+First two `i`s are "p" and "i" knowing flag format = picoCTF{} <br>
 Ord(flag[p] << 8) + ord(flag[i])
+
+
 
 ### Using ASCII :
 p = 01110000 & i = 01101001
@@ -37,6 +43,8 @@ Reference: https://www.compart.com/en/unicode/U+7069
 
 **MATCH** `灩`
 **It uses utf-16**
+
+
 
 # Reverse Engineering
 ```flag = "灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弲㘶㠴挲ぽ"
