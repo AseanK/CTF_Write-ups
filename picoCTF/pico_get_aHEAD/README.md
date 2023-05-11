@@ -80,7 +80,7 @@ Connection: close
 
 - Changed request type to `HEAD`
 
-**Flag found:  flag: `picoCTF{r3j3ct_th3_du4l1ty_cca66bd3}`**
+**Flag found: `picoCTF{r3j3ct_th3_du4l1ty_cca66bd3}`**
 
 - `HEAD` request `GET` information about the document without the body response. (often used by clients with cache to see if the document has changed)
 
