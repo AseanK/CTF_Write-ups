@@ -11,8 +11,6 @@ I'll be solving CTF questions daily basis.
 
 ## [get aHEAD](/picoCTF/pico_get_aHEAD)
 
-## [Static ain't always noise](/picoCTF/pico_Static_aint_alway_noise)
+## [Static ain't always noise](../picoCTF/pico_Static_aint_alway_noise)
 
-## [Keygenme.py](/picoCTF/pico_keygenme.py)
-
-<!-- ## [](/picoCTF/) -->
+<!-- ## [](../picoCTF/) -->
