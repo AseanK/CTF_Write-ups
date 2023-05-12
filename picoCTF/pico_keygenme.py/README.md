@@ -79,7 +79,7 @@ key_full_template_trial = key_part_static1_trial + key_part_dynamic1_trial + key
 - It fisrt checks if the length of `key_full_template_trial` matches
 - It checks if the `key_part_static1_trial` matches after
 - Iterates HashSet for the key_part_dynamic1_trial
-- Indexes are in following order: <br>
+- Indices are in following order: <br>
 `45362718`
 
 ## Reverse Engineering
