@@ -127,4 +127,4 @@ Any strings found in static have been written to static.ltdis.strings.txt with f
 
    **Flag found: picoCTF{d15a5m_t34s3r_ccb2b43e}** on line 1020
 
-   Time spent: ~30 miniutes 
+   Time spent: ~30 minutes 
