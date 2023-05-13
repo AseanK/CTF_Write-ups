@@ -16,11 +16,14 @@ Returns :
 
 `hexdump -C dolls.jpg`
 - Began investigating Hexidecimal formet
-```00042890  6D 61 67 65  73 2F 32 5F   63 2E 6A 70  67 55 54 09  mages/2_c.jpgUT.```
+```00042890  6D 61 67 65  73 2F 32 5F   63 2E 6A 70  67 55 54 09  mages/2_c.jpgUT.```<br>
 - `mages/2_c.jpgUT` looks suspicious; Maybe another jpg is embeded
 - 00042890 + 10 bytes = 0004289A which converts to 272538
-`dd if=dolls.jpg of=answer.jpg skip=272538 bs=1`<br>
-Parameter: <br>
+`dd if=dolls.jpg of=answer.jpg skip=272538 bs=1`
+
+
+Parameter:
+
 **if**: indicates the source, i.e. to where we copy from. Specifies a file that can be either a regular file or a device file.<br>
 
 **of**: indicates the destination file. The same thing, we can write both in a regular file and directly in the device.<br>
@@ -40,8 +43,8 @@ https://www.rapidtables.com/convert/number/hex-to-decimal.html<br>
 
 `hexdump -C dolls.jpg | grep IEND`
 returns:<br>
-```00042860  00 00 00 00  49 45 4E 44   AE 42 60 82  50 4B 03 04  ....IEND.B`.PK..
-```
+```00042860  00 00 00 00  49 45 4E 44   AE 42 60 82  50 4B 03 04  ....IEND.B`.PK..```
+
 - Looks like package file is embeded
 - 00042860 + 12 bytes = 0004286C which converts to 272492
 
