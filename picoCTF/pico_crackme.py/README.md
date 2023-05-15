@@ -15,8 +15,6 @@ bezos_cc_secret = "A:4@r%uL`M-^M0c0AbcM-MFE0cdhb52g2N"
 alphabet = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ"+ \
             "[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
-
-
 def decode_secret(secret):
     """ROT47 decode
 
@@ -37,8 +35,6 @@ def decode_secret(secret):
 
     print(decoded)
 
-
-
 def choose_greatest():
     """Echo the largest of the two numbers given by the user to the program
 
@@ -57,38 +53,37 @@ def choose_greatest():
     print( "The number with largest positive magnitude is "
         + str(greatest_value) )
 ```
-<br>
+
 - Bottom half is irrelevent
-- Decoding snippet is straight forward
+- Snippet for decoding is straight forward
+
 ```for c in secret:
         index = alphabet.find(c)
         original_index = (index + rotate_const) % len(alphabet)
         decoded = decoded + alphabet[original_index]
 ```
-<br>
+
 - Basically decoding function takes `self` value from class and loops every character to find its original index.
 - `rotate_const` value is the key in this case
 
 ## Reverse Engineering
-
-```bezos_cc_secret = "A:4@r%uL`M-^M0c0AbcM-MFE0cdhb52g2N"
+````
+bezos_cc_secret = "A:4@r%uL`M-^M0c0AbcM-MFE0cdhb52g2N"
 
 alphabet = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ"+ \
             "[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
 rotate_const = 47
 
-    # Storage for decoded secret
 decoded = ""  
 
-    # decode loop
 for c in bezos_cc_secret:
     index = alphabet.find(c)
     original_index = (index + rotate_const) % len(alphabet)
     decoded += alphabet[original_index]
 
 print(decoded)
-```
+````
 
 - Removed `class` and switched out `self` to `bezos_cc_secret`
 - This also can be done just passing in the `self` value
