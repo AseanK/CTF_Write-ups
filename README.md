@@ -17,4 +17,6 @@ I'll be solving CTF questions daily basis.
 
 ## [Matryoshka dolls](/picoCTF/pico_Matryoshka_dolls)
 
+## [crackme.py](/picoCTF/pico_crackme.py)
+
 <!-- ## [](/picoCTF/) -->
