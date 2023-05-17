@@ -23,4 +23,6 @@ I'll be solving CTF daily basis.
 
 ## [findme](/picoCTF/pico_findme)
 
+## [hideme](/picoCTF/pico_hideme)
+
 <!-- ## [](/picoCTF/) -->
