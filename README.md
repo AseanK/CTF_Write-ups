@@ -21,4 +21,6 @@ I'll be solving CTF questions daily basis.
 
 ## [Cookies](/picoCTF/pico_Cookies)
 
+## [findme](/picoCTF/pico_findme)
+
 <!-- ## [](/picoCTF/) -->
