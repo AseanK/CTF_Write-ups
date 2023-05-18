@@ -25,4 +25,6 @@ I'll be solving CTF daily basis.
 
 ## [hideme](/picoCTF/pico_hideme)
 
+## [MatchTheRegex](/picoCTF/pico_MatchTheRegex)
+
 <!-- ## [](/picoCTF/) -->
