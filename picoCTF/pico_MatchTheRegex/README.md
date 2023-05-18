@@ -7,7 +7,7 @@ Additional details will be available after launching your challenge instance.
 ## Notes
 - Description says try to match a regular expression
 
-You can learn more about regular expression (here)[https://eloquentjavascript.net/09_regexp.html]
+You can learn more about regular expression: https://eloquentjavascript.net/09_regexp.html
 
 - Open up the webpage and view page source
 - Under the `<script>` tag:
@@ -30,10 +30,14 @@ You can learn more about regular expression (here)[https://eloquentjavascript.ne
 
 - What we're interested in is the `// ^p.....F!?` comment
 
-`^p` = Starting from `p`
+`^p` = Starting from p
+
 `.` = Replaces any single charater
+
 `F` = Ends with F
+
 `!` = Symbols treated as regular character
+
 `?` = Can replace anything
 
 Regular expression cheat sheet: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet
