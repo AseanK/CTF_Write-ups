@@ -27,4 +27,7 @@ I'll be solving CTF daily basis.
 
 ## [MatchTheRegex](/picoCTF/pico_MatchTheRegex)
 
+## [HideToSee](/picoCTF/pico_HideToSee)
+
+## [repetition](/picoCTF/pico_repetition)
 <!-- ## [](/picoCTF/) -->
