@@ -7,7 +7,8 @@ How about some hide and seek heh? Look at this image 'here'.
 ## Notes
 - Contains `atbash.jpg` file
 - Ran `exiftool atbash.jpg` to see the details about the file
-```File Name                       : atbash.jpg
+```
+File Name                       : atbash.jpg
 Directory                       : .
 File Size                       : 51 kB
 File Modification Date/Time     : 2023:05:22 02:58:58-04:00
@@ -35,7 +36,8 @@ Megapixels                      : 0.212
 
 - Ran `steghide info atbash.jpg` 
 
-```"atbash.jpg":
+```
+"atbash.jpg":
   format: jpeg
   capacity: 2.4 KB
 Try to get information about embedded data ? (y/n) y
@@ -50,7 +52,8 @@ Enter passphrase:
 - Also It bypassed the passphrase, It usually asks to enter a passphrase, which means the password is just empty
 - Ran `steghide extract -sf  atbash.jpg` to extract the data.
 
-```Enter passphrase: 
+```
+Enter passphrase: 
 wrote extracted data to "encrypted.txt".
 ```
 
