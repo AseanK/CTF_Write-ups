@@ -20,7 +20,7 @@ I wonder what this really is... `enc`
 Ord(flag[i] << 8) + ord(flag[I + 1])
 ```
 
-First two `i`s are "p" and "i" knowing flag format = picoCTF{} <br>
+The first two `i`s are "p" and "i" knowing flag format = picoCTF{} <br>
 Ord(flag[p] << 8) + ord(flag[i])
 
 
@@ -35,9 +35,9 @@ Reference: http://sticksandstones.kstrom.com/appen.html
 - Shifting 8 bits to left = 0111.0000.0000.0000 ( 16-bits)
 28672 + 105  = 28777
 
-Tried to find from ASCII but ASCII is 8-bit code ( `<< 8` makes it 16-bit ) <br>
+Tried to find it from ASCII but ASCII is 8-bit code ( `<< 8` makes it 16-bit ) <br>
 UTF-16 is a 16-bit code
-Looked up 28777 unicode character
+Looked up 28777 Unicode character
 
 Reference: https://www.compart.com/en/unicode/U+7069
 
@@ -55,17 +55,17 @@ for i in range(0, len(flag)):
 print(ans)
 ```
 
-Everything seems good getting duplicated output for `chr(flag[i].encode('utf-16')[-1])`.
-After digging for some time; Came across following article
+Everything seems good but keeps getting duplicated output for `chr(flag[i].encode('utf-16')[-1])`.
+After digging for some time; Came across the following article
 
 Reference: https://bugs.python.org/issue25325
 
 There are "three sub-flavors" for UTFs :
 - BE : Big-Endian byte serialization (most significant byte first)
 - LE : Little-Endian byte serialization (less significant byte first)
-- unmarked (Big-Endian by default, but may include a order mark to indicate the actual byte serialization used)
+- unmarked (Big-Endian by default, but may include an order mark to indicate the actual byte serialization used)
 
-Reference : https://www.unicode.org/glossary
+Reference: https://www.unicode.org/glossary
 
 Tried :
 
@@ -79,9 +79,9 @@ print(ans)
 
 **Flag found : `picoCTF{16_bits_inst34d_of_8_26684c20}`**
 
-Also tried `utf-16le` to see if I get different result.
-returns duplicated `ans` like the first one (Seems like `unmarked` used LE)
+Also tried `utf-16le` to see if I get a different result.
+returns duplicated `ans` like the first one (It seems like `unmarked` used LE)
 
-`utf-32be` gives valid flag. ( because uses significant bytes first?? )
+`utf-32be` gives a valid flag. ( because uses significant bytes first?? )
 
-Total time spent : ~7 hours
+Total time spent: ~7 hours

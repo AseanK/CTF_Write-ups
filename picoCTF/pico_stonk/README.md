@@ -1,5 +1,5 @@
 # Description
-I decided to try something noone else has before. I made a bot to automatically trade stonks for me using AI and machine learning. I wouldn't believe you if you told me it's unsecure! `vuln.c` 
+I decided to try something no one else has before. I made a bot to automatically trade stonks for me using AI and machine learning. I wouldn't believe you if you told me it's unsecure! `vuln.c` 
 `nc mercury.picoctf.net 16439`
 
 **tags:Binary Exploitation**
@@ -19,7 +19,7 @@ I decided to try something noone else has before. I made a bot to automatically 
         }
         fgets(api_buf, FLAG_BUFFER, f);
 ```
-```// TODO: Figure out how to read token from file, for now just ask
+```// TODO: Figure out how to read token from the file, for now just ask
 
         char *user_buf = malloc(300 + 1);
         printf("What is your API token?\n");
@@ -65,7 +65,7 @@ What is your API token?
         fgets(api_buf, FLAG_BUFFER, f);
 ```
 
-- From the snippet above, API token looks to be the input.
+- From the snippet above, the API token looks to be the input.
 - The ONLY validation is when the token isn't entered.
 
 ```// TODO: Figure out how to read token from file, for now just ask
@@ -77,9 +77,9 @@ What is your API token?
         printf(user_buf);
 ```
 
-- Comment show that the token is only being asked ( does not get checked )
+- Comment shows that the token is only being asked ( does not get checked )
 - Memory space is created with `malloc()` for the API token
-- Last line prints out API token with `printf()`
+- The last line prints out the API token with `printf()`
 
 ## Input validation
 print type specifiers for `printf()` :
@@ -113,10 +113,10 @@ Removed unnecessary bytes:
 
 Converts to : 
 `ocip{FTC0l_I4_t5m_ll0m_y_y3nbc7ceac6ÿ}`
-- Looks like it's using different byte order sequence.
+- Looks like it's using a different byte-order sequence.
 - Tried converting endianness
     `}ÿÿ6caec7cbn3y_y_m0ll_m5t_4I_l0CTF{pico`
-- Found the sequnce order ( 8-bytes are flipped )
+- Found the sequence order (8 bytes are flipped)
     E.g. First 8 bytes `6F 63 69 70` to `70 69 63 6F`
 - Manually relocated bytes
 `7069636F4354467B495F6C3035745F346C6C5F6D795F6D306E33795F63376362366361657D00957D009EFF`
@@ -125,7 +125,7 @@ Converts to :
 
 **Flag found: picoCTF{I_l05t_4ll_my_m0n3y_c7cb6cae}^~ÿ**
 
-Total time spent : ~6 hours
+Total time spent: ~6 hours
 
 
 Hexadecimal Converter: 

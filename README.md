@@ -1,7 +1,6 @@
 # CTF
 
-Personal write-ups for CTFs. <br>
-I'll be solving CTF daily basis.
+Personal write-ups for CTFs.
 
 ## [Transformation](/picoCTF/pico_transformation)
 
