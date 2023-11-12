@@ -100,7 +100,6 @@ print(ans)
 ```
 
 **Flag found: f911a486**
-<br>
-- Complete flah would be ``picoCTF{1n_7h3_|<3y_of_f911a486``
-<br>
-Total time spent: ~ 30 minutes
+
+- Complete flag would be `picoCTF{1n_7h3_|<3y_of_f911a486}`
+

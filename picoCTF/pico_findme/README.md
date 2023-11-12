@@ -21,5 +21,3 @@ Additional details will be available after launching your challenge instance.
 
 
 **Flag found: picoCTF{proxies_all_the_way_3d9e3697}**
-
-Total time spent: ~ 5 minutes

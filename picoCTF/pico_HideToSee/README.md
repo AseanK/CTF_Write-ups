@@ -67,7 +67,3 @@ To learn more about steghide : https://steghide.sourceforge.net/documentation.ph
 - Decrypted the flag using the online atbash converter
 
 **Flag found: picoCTF{atbash_crack_92533667}**
-
-
-Total time spent: ~ 10 minutes
-

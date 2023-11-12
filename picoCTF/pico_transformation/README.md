@@ -83,5 +83,3 @@ Also tried `utf-16le` to see if I get a different result.
 returns duplicated `ans` like the first one (It seems like `unmarked` used LE)
 
 `utf-32be` gives a valid flag. ( because uses significant bytes first?? )
-
-Total time spent: ~7 hours

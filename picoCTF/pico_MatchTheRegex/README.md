@@ -46,5 +46,3 @@ Regular expression cheat sheet: https://developer.mozilla.org/en-US/docs/Web/Jav
 - With the information we gathered, simply search for `picoCTF{`
 
 **Flag found: picoCTF{succ3ssfully_matchtheregex_c64c9546}**
-
-Total time spent: ~ 10 minutes

@@ -125,9 +125,6 @@ Converts to :
 
 **Flag found: picoCTF{I_l05t_4ll_my_m0n3y_c7cb6cae}^~ÿ**
 
-Total time spent: ~6 hours
-
-
 Hexadecimal Converter: 
 https://www.scadacore.com/tools/programming-calculators/online-hex-converer
 

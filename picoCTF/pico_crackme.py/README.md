@@ -89,5 +89,3 @@ print(decoded)
 - This also can be done just passing in the `self` value
 
 **Flag found: picoCTF{1|\/|_4_p34|\|ut_4593da8a}**
-
-total time spent: ~ 5 minutes

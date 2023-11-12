@@ -58,5 +58,3 @@ returns:<br>
 - After repeating 5 times, `.txt` file is in the `.zip` file <br>
 
 **Flag-found: picoCTF{336cf6d51c9d9774fd37196c1d7320ff}**
-<br>
-total time spent: ~ 4 hours

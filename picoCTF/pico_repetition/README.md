@@ -24,5 +24,3 @@ bTkzVDFWT2JsQlVNRXNLCg==
 - Repeated the steps 3 more times and got the flag (hence the name repetition)
 
 **Flag found: picoCTF{base64_n3st3d_dic0d!n8_d0wnl04d3d_3f81f7be}**
-
-Total time spent: 5 minutes
