@@ -128,7 +128,7 @@ flag.txt not found in current directory
 - Maybe the key's in the server?
 - Tried to do same but when I go out of bound nothing happends
   - I have to get to the certain point to get the flag
-- At top left if you go out of bound to only `a`s (left) you get the flag but the program exits
+- At top left if you go out of bound to only `'a'`s (left) you get the flag but the program exits
 - Tried going left one at a time and at the fourth move you get the flag and the program is still running
 - Then ran `player = flag`
 
