@@ -31,4 +31,7 @@ Personal write-ups for CTFs.
 ## [repetition](/picoCTF/pico_repetition)
 
 ## [tunn3l v1s10n](/picoCTF/pico_tunn3l_v1s10n)
+
+## [babygame01](/picoCTF/pico_babygame01)
+
 <!-- ## [](/picoCTF/) -->
