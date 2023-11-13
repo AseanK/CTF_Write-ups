@@ -36,4 +36,6 @@ Personal write-ups for CTFs.
 
 ## [PcapPoisoning](/picoCTF/pico_PcapPoisoning)
 
+## [Ready Gladiator 0](/picoCTF/pico_Ready_Gladiator_0)
+
 <!-- ## [](/picoCTF/) -->
