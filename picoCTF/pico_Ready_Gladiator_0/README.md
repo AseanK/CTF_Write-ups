@@ -5,6 +5,8 @@ Your opponent is the Imp. The source is available `here`./
 If you wanted to pit the Imp against himself, you could download the Imp and connect to the CoreWars server like this:\
 `nc saturn.picoctf.net 54286 < imp.red`
 
+**tags: Reverse Engineering, CoreWars**
+
 ## Notes
 
 - Downloaded the file

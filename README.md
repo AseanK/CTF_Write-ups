@@ -38,4 +38,14 @@ Personal write-ups for CTFs.
 
 ## [Ready Gladiator 0](/picoCTF/pico_Ready_Gladiator_0)
 
-<!-- ## [](/picoCTF/) -->
+## [Reverse](/picoCTF/pico_Reverse)
+
+## [rotation](/picoCTF/pico_rotation)
+
+## [Safe Opender](/picoCTF/pico_Safe_Opener_2)
+
+## [SOAP](/picoCTF/pico_SOAP)
+
+## [Find And Open](/picoCTF/pico_FindAndOpen)
+
+<!-- ## [](/picoCTF) -->
