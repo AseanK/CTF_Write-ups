@@ -48,4 +48,6 @@ Personal write-ups for CTFs.
 
 ## [Find And Open](/picoCTF/pico_FindAndOpen)
 
+## [Hijacking](/picoCTF/pico_hijacking)
+
 <!-- ## [](/picoCTF) -->
