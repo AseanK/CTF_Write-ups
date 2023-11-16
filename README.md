@@ -50,4 +50,6 @@ Personal write-ups for CTFs.
 
 ## [Hijacking](/picoCTF/pico_hijacking)
 
+## [who is it](/picoCTF/who_is_it)
+
 <!-- ## [](/picoCTF) -->
